@@ -1,14 +1,15 @@
 /*
 Theme Name: Cuttlefish
 Theme URI: http://wpspot.com/themes/cuttlefish/
-Description: Simple and stylish widget ready theme with two columns, fixed width, editor style, custom menu and threaded-comments.
+Description: Simple and stylish widget ready theme with two columns, fixed width, editor style, custom menu, threaded-comments and outstanding color schemes.
 Author: WpSpot.com
 Author URI: http://wpspot.com/
-Version: 1.1.5
-Tags: blue, white, dark, two-columns, right-sidebar, fixed-width, editor-style, custom-menu, sticky-post, threaded-comments, translation-ready
+Version: 2.0.0
+Tags: black, blue, gray, green, pink, purple, red, white, yellow, dark, light, two-columns, right-sidebar, fixed-width, editor-style, custom-menu, sticky-post, theme-options, threaded-comments, translation-ready
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
+
 * {
 	border: 0;
 	margin: 0;
@@ -263,7 +264,7 @@ dd {
 	font-size: 11px;
 	margin: 0;
 	padding: 0;
-	width: 100%;
+	width: 802px;
 }
 #menu-header {
 	background: url(images/menu-header.png) no-repeat left top;
@@ -288,7 +289,7 @@ dd {
 	list-style: none;
 	margin: 0 15px;
 	min-height: 38px;
-	width: 100%;
+	width: 772px;
 }
 #menu-box .menu li {
 	float: left;
@@ -312,7 +313,7 @@ dd {
 	display: none;
 	float: left;
 	left: 0;
-	margin: 0 2px 0 0;
+	margin: 0;
 	position: absolute;
 	top: 37px;
 	width: 180px;
@@ -322,7 +323,7 @@ dd {
 	min-width: 180px;
 }
 #menu-box .menu ul ul ul {
-	margin: 0 0 0 2px;
+	margin: 0 0 0 1px;
 	left: 100%;
 	top: 0;
 }
@@ -741,7 +742,8 @@ img.alignright {
 	margin-bottom: 7px;
 }
 #respond label {
-	margin: 0;
+	display: block;
+	font-weight: bold;
 }
 #respond h3 {
 	font-size: 18px;
@@ -749,25 +751,14 @@ img.alignright {
 	padding-top: 5px;
 	position: static;
 }
-#respond .comment-form-comment label {
-	padding: 0 13px 0 0;
-	font-weight: bold;
+#respond input[type="text"] {
+	width: 200px;
 }
-#respond .comment-form-author label {
-	font-weight: bold;
-}
-#respond .comment-form-author span {
-	padding: 0px 29px 0px 0px;
-}
-#respond .comment-form-email label {
-	font-weight: bold;
-}
-#respond .comment-form-email span {
-	padding: 0 31px 0 0;
-}
-#respond .comment-form-url label {
-	font-weight: bold;
-	padding: 0 23px 0 0;
+#respond .comment-form-author,
+#respond .comment-form-email,
+#respond .comment-form-url,
+#respond .comment-form-comment {
+    position: relative;
 }
 #respond .form-allowed-tags {
 	border-top: 1px dotted #828891;
@@ -776,13 +767,18 @@ img.alignright {
 	padding: 7px;
 }
 #respond .comment-notes {
-	font-size: 10px;
 	border-bottom: 1px dotted #828891;
+	font-size: 10px;
 	margin: 0 20px 10px 0;
 }
 #respond .required {
-	color: #e94459;
-	font-size: 10px;
+	color: red;
+}
+#respond .comment-form-author .required,
+#respond .comment-form-email .required {
+	position: absolute;
+	top: 20px;
+	left: 205px;
 }
 
 
@@ -983,6 +979,9 @@ blockquote cite {
 }
 #sidebar ul li > ul li:hover {
 	background-color: #e8e6e6;
+}
+#sidebar ul li a {
+	padding-right: 5px;
 }
 #sidebar a {
 	color: #112032;

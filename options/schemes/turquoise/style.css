@@ -1,0 +1,193 @@
+/* Cuttlefish Turquoise color scheme */
+
+body {
+	background: url(images/background.gif);
+	color: #19465b;
+}
+a {
+	color: #924b41;
+}
+a:hover {
+	color: #541611;
+	text-decoration: none;
+}
+a:visited {
+	color: #b2817a;
+}
+label {
+	color: #19465b;
+}
+abbr, acronym {
+	cursor: help;
+}
+abbr {
+	border-bottom: 1px dashed #19465b;
+}
+acronym {
+	border-bottom: 1px dotted #19465b;
+}
+address {
+	border-left: 2px solid #334626;
+}
+pre {
+	background-color: #fcf4e4;
+	color: #6b5d3e;
+}
+.content input[type="reset"],
+.content input[type="submit"],
+#respond input[type="submit"] {
+	background-color: #3f6a73;
+	border: 1px solid #19455a;
+}
+.content input[type="reset"]:hover,
+.content input[type="submit"]:hover,
+#respond input[type="submit"]:hover {
+	background-color: #f0d18a;
+	border: 1px solid #6b5d3e;
+	color: #4d3d1f;
+}
+#posts table th {
+	background-color: #3f6a73;
+}
+#menu-box .menu {
+	background: url(images/menu-middle.png) repeat-y left top;
+}
+#menu-header {
+	background: url(images/menu-header.png) no-repeat left top;
+}
+#menu-footer {
+	background: url(images/menu-footer.png) no-repeat left bottom;
+}
+#menu-decor {
+	background: url(images/menu-decor.png) no-repeat left top;
+}
+#menu-box .menu a {
+	background-color: #3f6a73;
+	border: 1px solid #19455a;
+	color: #fff;
+}
+#menu-box .menu li:hover > a,
+#menu-box .menu ul ul:hover > a {
+	background-color: #f0d18a;
+	border: 1px solid #6b5d3e;
+	color: #4d3d1f;
+}
+#menu-box .menu ul li.current_page_item > a,
+#menu-box .menu ul li.current-menu-ancestor > a,
+#menu-box .menu ul li.current-menu-item > a,
+#menu-box .menu ul li.current-menu-parent > a {
+	background-color: #f0d18a;
+	border: 1px solid #6b5d3e;
+	color: #6b5d3e;
+}
+* html #menu-box .menu ul li.current_page_item a,
+* html #menu-box .menu ul li.current-menu-ancestor a,
+* html #menu-box .menu ul li.current-menu-item a,
+* html #menu-box .menu ul li.current-menu-parent a,
+* html #menu-box .menu ul li a:hover {
+	background-color: #f0d18a;
+	border: 1px solid #6b5d3e;
+}
+#rss {
+	background: url(images/rss.png) no-repeat left top;
+}
+#rss a {
+	color: #19465b;
+}
+#rss a:hover {
+	color: #3f6a73;
+}
+.page > h2 a,
+.post > h2 a {
+	color: #19465b;
+}
+.sticky {
+	background: url(images/sticky.gif) repeat-x left top #f0f2f3;
+	border-bottom: 2px #bac7cd solid;
+}
+.sticky .content,
+.sticky .postmeta-btm {
+	border-top: 1px solid #bac7cd;
+}
+.postmeta-top,
+.postmeta-btm {
+	color: #19465b;
+}
+.comment,
+.commentlist .children li {
+	border: 1px solid #c7d0d5;
+}
+.pingback p {
+	background: url(images/tag.png) no-repeat left 8px;
+}
+.comment-top {
+	background-color: #f3f3f3;
+	border-bottom: 1px solid #c7d0d5;
+}
+.archive-label {
+	background: url(images/archive-label.gif) no-repeat left top;
+}
+.archive-label span {
+	background-color: #95a687;
+}
+.page-link a:link,
+.page-link a:visited {
+	background-color: #3f6a73;
+	border: 1px solid #19455a;
+}
+.page-link a:active,
+.page-link a:hover {
+	background-color: #f0d18a;
+	border: 1px solid #6b5d3e;
+	color: #4d3d1f;
+}
+#wp-calendar td a {
+	color: #924b41 !important;
+	text-decoration: underline;
+}
+#wp-calendar th {
+	background-color: #7aa59c;
+}
+#wp-calendar tfoot td {
+	background: none;
+}
+#searchsubmit {
+	background-color: #3f6a73;
+	border: 1px solid #19455a;
+}
+#searchsubmit:hover {
+	background-color: #e6b65e;
+	border: 1px solid #6b5d3e;
+}
+.cnavigation a,
+.pnavigation a {
+	color: #924b41;
+}
+#sidebar {
+	background: url(images/sidebar-top.gif) no-repeat left top #f3f3f3;
+}
+#sidebar ul ul li {
+	border-bottom: solid 1px #bac7cd;
+}
+#sidebar ul li > ul li:hover {
+	background-color: #e8e8e8;
+}
+#sidebar a {
+	color: #14394b !important;
+}
+#sidebar li > h2 {
+	background: url(images/sidebar-heading-top.gif) no-repeat left top;
+	color: #14394b;
+}
+#sidebar li > h2 span {
+	background: url(images/sidebar-heading-bottom.gif) no-repeat left bottom;
+}
+#sidebar li.foot {
+	background: url(images/sidebar-bottom.gif) no-repeat left bottom;
+}
+#footer {
+	background: url(images/footer.png) repeat-x left top;
+}
+#footer .footer-bottom {
+	background: url(images/footer-bottom.png) no-repeat left bottom;
+}

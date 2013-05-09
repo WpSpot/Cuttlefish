@@ -1,0 +1,195 @@
+/* Cuttlefish Ashes color scheme */
+
+body {
+	background: #535353 url(images/background.gif);
+	color: #4c4c4c;
+}
+a {
+	color: #b62c26;
+}
+a:hover {
+	color: #820806;
+	text-decoration: none;
+}
+a:visited {
+	color: #c55651;
+}
+label {
+	color: #4c4c4c;
+}
+abbr, acronym {
+	cursor: help;
+}
+abbr {
+	border-bottom: 1px dashed #4c4c4c;
+}
+acronym {
+	border-bottom: 1px dotted #4c4c4c;
+}
+address {
+	border-left: 2px solid #aa1111;
+}
+pre {
+	background-color: #f2f2f2;
+	color: #b62c26;
+}
+.content input[type="reset"],
+.content input[type="submit"],
+#respond input[type="submit"] {
+	background-color: #454545;
+	border: 1px solid #2b2b2b;
+}
+.content input[type="reset"]:hover,
+.content input[type="submit"]:hover,
+#respond input[type="submit"]:hover {
+	background-color: #541512;
+	border: 1px solid #380e0c;
+}
+#posts table th {
+	background-color: #aa1111;
+}
+#menu-box .menu {
+	background: url(images/menu-middle.png) repeat-y left top;
+}
+#menu-header {
+	background: url(images/menu-header.png) no-repeat left top;
+}
+#menu-footer {
+	background: url(images/menu-footer.png) no-repeat left bottom;
+}
+#menu-decor {
+	background: url(images/menu-decor.png) no-repeat left top;
+}
+#menu-box .menu a {
+	background: #454545;
+	border: 1px solid #2b2b2b;
+	color: #fff;
+}
+#menu-box .menu li:hover > a,
+#menu-box .menu ul ul:hover > a {
+	background: #541512;
+	border: 1px solid #380e0c;
+}
+#menu-box .menu ul li.current_page_item > a,
+#menu-box .menu ul li.current-menu-ancestor > a,
+#menu-box .menu ul li.current-menu-item > a,
+#menu-box .menu ul li.current-menu-parent > a {
+	background: #541512;
+	border: 1px solid #380e0c;
+}
+* html #menu-box .menu ul li.current_page_item a,
+* html #menu-box .menu ul li.current-menu-ancestor a,
+* html #menu-box .menu ul li.current-menu-item a,
+* html #menu-box .menu ul li.current-menu-parent a,
+* html #menu-box .menu ul li a:hover {
+	background: #541512;
+	border: 1px solid #380e0c;
+}
+#rss {
+	background: url(images/rss.png) no-repeat left top;
+}
+#rss a {
+	color: #4c4c4c;
+}
+#rss a:hover {
+	color: #541512;
+}
+.page > h2 a,
+.post > h2 a {
+	color: #333333;
+}
+.sticky {
+	background: url(images/sticky.gif) repeat-x left top #f2f2f2;
+	border-bottom: 2px #d4d4d4 solid;
+}
+.sticky .content,
+.sticky .postmeta-btm {
+	border-top: 1px solid #d4d4d4;
+}
+.postmeta-top,
+.postmeta-btm {
+	color: #4c4c4c;
+}
+.comment,
+.commentlist .children li {
+	border: 1px solid #d4d4d4;
+}
+.pingback p {
+	background: url(images/tag.png) no-repeat left 8px;
+}
+.comment-top {
+	background-color: #f5f5f5;
+	border-bottom: 1px solid #d4d4d4;
+}
+.archive-label {
+	background: url(images/archive-label.gif) no-repeat left top;
+}
+.archive-label span {
+	background-color: #454545;
+}
+.page-link a:link,
+.page-link a:visited {
+	background: #454545;
+	border: 1px solid #2b2b2b;
+}
+.page-link a:active,
+.page-link a:hover {
+	background: #541512;
+	border: 1px solid #380e0c;
+}
+#wp-calendar td a {
+	color: #b62c26 !important;
+	text-decoration: underline;
+}
+#wp-calendar th {
+	background-color: #454545;
+}
+#wp-calendar tfoot td {
+	background: none;
+}
+#searchsubmit {
+	background-color: #454545;
+	border: 1px solid #2b2b2b;
+}
+#searchsubmit:hover {
+	background-color: #541512;
+	border: 1px solid #380e0c;
+}
+.cnavigation a,
+.pnavigation a {
+	color: #b62c26;
+}
+#sidebar {
+	background: url(images/sidebar-top.gif) no-repeat left top #f5f5f5;
+}
+#sidebar ul ul li {
+	border-bottom: solid 1px #d4d4d4;
+}
+#sidebar ul li > ul li:hover {
+	background-color: #ebebeb;
+}
+#sidebar a {
+	color: #8c3a27 !important;
+}
+#sidebar li > h2 {
+	background: url(images/sidebar-heading-top.gif) no-repeat left top;
+	color: #333333;
+}
+#sidebar li > h2 span {
+	background: url(images/sidebar-heading-bottom.gif) no-repeat left bottom;
+}
+#sidebar li.foot {
+	background: url(images/sidebar-bottom.gif) no-repeat left bottom;
+}
+#footer {
+	background: url(images/footer.png) repeat-x left top;
+}
+#footer a {
+	color: #fff;
+}
+#footer .footer-bottom {
+	background: url(images/footer-bottom.png) no-repeat left bottom;
+}
+#copyright {
+	color: #fff;
+}

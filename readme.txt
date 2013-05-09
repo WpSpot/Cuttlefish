@@ -1,11 +1,11 @@
 Thank you for downloading Cuttlefish!
 WpSpot.com Team http://twitter.com/wpspotdotcom
 
-Do you like Cuttlefish but want different color schemes?
-Download 'Cuttlefish Skin Pack' - FREE bundle of 10 child themes
-http://wpspot.com/themes/cuttlefish-skin-pack/
-
 CHANGELOG
+
+=== 2.0.0 ===
+New: 11 color schemes.
+Fix: Styling of comment form, sidebar and menu. 
 
 === 1.1.5 ===
 Fix: Removed duplicated code.
