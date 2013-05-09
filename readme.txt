@@ -3,6 +3,10 @@ WpSpot.com Team http://twitter.com/wpspotdotcom
 
 CHANGELOG
 
+=== 1.0.2 ===
+Fix: The credit text is missing translation function.
+Fix: register_sidebar() is missing the 'name', 'id', 'description' arguments.
+
 === 1.0.1 ===
 New: Styling of calendar widget.
 Fix: Menu is displayed incorrectly when there are no menu items added.

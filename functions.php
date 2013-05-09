@@ -25,6 +25,9 @@ endif;
 function cuttlefish_widgets_init() {
 	register_sidebar(
 		array(
+			'name'         => __( 'Right Sidebar', 'cuttlefish' ),
+			'id'           => __( 'right-sidebar', 'cuttlefish' ),
+			'description'  => __( 'Widgets in this area will be shown on the right-hand side.', 'cuttlefish' ),
 			'before_title' => '<h2><span>',
 			'after_title'  => '</span></h2>'
 		)
