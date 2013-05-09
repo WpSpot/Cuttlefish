@@ -4,7 +4,7 @@ Theme URI: http://wpspot.com/themes/cuttlefish/
 Description: Simple and stylish widget ready theme with two columns, fixed width, editor style, custom menu, threaded-comments and outstanding color schemes.
 Author: WpSpot.com
 Author URI: http://wpspot.com/
-Version: 2.0.0
+Version: 2.1.0
 Tags: black, blue, gray, green, pink, purple, red, white, yellow, dark, light, two-columns, right-sidebar, fixed-width, editor-style, custom-menu, sticky-post, theme-options, threaded-comments, translation-ready
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -17,18 +17,18 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 }
 body {
 	background: #1a1a1a url(images/background.gif);
-	color: #112032;
+	color: #3c3952;
 	font: 12px/18px Tahoma, Verdana, sans-serif;
 	width: 100%;
 	height: 100%;
 }
 a {
-	color: #e94459;
+	color: #d21941;
 	outline: none;
 	text-decoration: underline;
 }
 a:hover {
-	color: #d91616;
+	color: #bf0d29;
 	text-decoration: none;
 }
 a:visited {
@@ -86,8 +86,8 @@ acronym {
 	border-bottom: 1px dotted #112032;
 }
 address {
-	border: 1px dotted #36475d;
-	border-left: 2px solid #36475d;
+	border: 1px dotted #3c3952;
+	border-left: 2px solid #a10237;
 	font-family: georgia;
 	font-size: 12px;
 	font-weight: bold;
@@ -96,14 +96,14 @@ address {
 }
 pre {
 	background-color: #f9f9f9;
-	color: #7e2633;
+	color: #c9213f;
 	font-family: "Courier New";
 	font-size: 11px;
 	padding: 0 10px;
 }
 sub, sup {
 	font-weight: bold;
-} 
+}
 #bg {
 	margin: 0 auto;
 	min-height: 100%;
@@ -192,8 +192,8 @@ dd {
 .content input[type="reset"],
 .content input[type="submit"],
 #respond input[type="submit"] {
-	background-color: #db3d50;
-	border: 1px solid #9e2c3a;
+	background-color: #c9213f;
+	border: 1px solid #a10237;
 	color: #fff;
 	cursor: pointer;
 	font-size: 11px;
@@ -204,8 +204,8 @@ dd {
 .content input[type="reset"]:hover,
 .content input[type="submit"]:hover,
 #respond input[type="submit"]:hover {
-	background-color: #bc303f;
-	border: 1px solid #7c202b;
+	background-color: #b31d38;
+	border: 1px solid #a10237;
 }
 .content input[id="searchsubmit"] {
 	background: url(images/search.png) no-repeat 5px 5px;
@@ -231,7 +231,7 @@ dd {
 	margin: 10px 0;
 }
 #posts table th {
-	background: #36475d;
+	background: #3c3952;
 	color: #fff;
 	padding: 5px 10px;
 	text-align: left;
@@ -298,9 +298,9 @@ dd {
 	width: auto;
 }
 #menu-box .menu a {
-	background: #112034;
-	border: 1px solid #000;
-	color: #ddd;
+	background: #c9213f;
+	border: 1px solid #a10237;
+	color: #fafafa;
 	display: block;
 	font-family: Tahoma;
 	font-size: 11px;
@@ -334,8 +334,8 @@ dd {
 }
 #menu-box .menu li:hover > a,
 #menu-box .menu ul ul:hover > a {
-	background: #9d2e3c;
-	border: 1px solid #601721;
+	background: #b31d38;
+	border: 1px solid #a10237;
 	color: #fff;
 }
 #menu-box .menu ul li:hover > ul {
@@ -345,8 +345,8 @@ dd {
 #menu-box .menu ul li.current-menu-ancestor > a,
 #menu-box .menu ul li.current-menu-item > a,
 #menu-box .menu ul li.current-menu-parent > a {
-	background: #9d2e3c;
-	border: 1px solid #601721;
+	background: #3c3952;
+	border: 1px solid #36344a;
 	color: #fff;
 }
 * html #menu-box .menu ul li.current_page_item a,
@@ -368,7 +368,7 @@ dd {
 	width: 185px;
 }
 #rss a {
-	color: #041325;
+	color: #3c3952;
 	display: block;
 	font-weight: bold;
 	margin: 0;
@@ -380,7 +380,7 @@ dd {
 }
 #rss a:hover {
 	background: inherit;
-	color: #fff;
+	color: #0e0d1a;
 }
 #rss a span {
 	display: inherit;
@@ -455,7 +455,7 @@ body .page,
 }
 .page > h2 a,
 .post > h2 a {
-	color: #112032;
+	color: #3c3952;
 	text-decoration: none;
 }
 .page > h2 a:hover,
@@ -515,9 +515,6 @@ body .page,
 }
 .postmeta-btm .post-meta-item {
 	margin-top: 5px;
-}
-.postmeta-btm .post-meta-item span {
-	font-weight: normal;
 }
 #posts .tags {
 	margin: 0;
@@ -782,20 +779,6 @@ img.alignright {
 }
 
 
-/* Read More Link ----------------------------------------------------------- */
-
-.read-more {
-	background: url(images/read.png) no-repeat left top;
-	display: block;
-	height: 16px;
-	padding-left: 20px;
-	text-decoration: underline;
-}
-.read-more:hover {
-	text-decoration: none;
-}
-
-
 /* Archive Labels ----------------------------------------------------------- */
 
 .archive-label {
@@ -804,7 +787,7 @@ img.alignright {
 	margin-top: 5px;
 }
 .archive-label span {
-	background-color: #c4394b;
+	background-color: #c9213f;
 	color: #fff;
 	font-size: 11px;
 	font-weight: bold;
@@ -820,7 +803,7 @@ img.alignright {
 
 blockquote {
 	border-left: 2px solid #cccccc;
-	color: #000000;
+	color: #000;
 	font-family: Georgia;
 	padding: 7px 20px 7px 20px;
 }
@@ -847,8 +830,8 @@ blockquote cite {
 }
 .page-link a:link,
 .page-link a:visited {
-	background: #112034;
-	border: 1px solid #000;
+	background: #c9213f;
+	border: 1px solid #a10237;
 	color: #fff;
 	font-weight: normal;
 	margin: 5px auto;
@@ -857,8 +840,8 @@ blockquote cite {
 }
 .page-link a:active,
 .page-link a:hover {
-	background: #db3d50;
-	border: 1px solid #9e2c3a;
+	background: #b31d38;
+	border: 1px solid #a10237;
 	color: #fff;
 }
 
@@ -885,7 +868,7 @@ blockquote cite {
 	background: #fff;
 }
 #wp-calendar td a {
-	color: #021123;
+	color: #3c3952;
 	font-weight: bold;
 	display: block;
 	text-decoration: underline;
@@ -894,7 +877,7 @@ blockquote cite {
 	background: none;
 }
 #wp-calendar th {
-	background: #db3d50;
+	background: #c9213f;
 	color: #fff;
 }
 
@@ -907,9 +890,9 @@ blockquote cite {
 	border: 1px solid #d1cece;
 }
 #searchsubmit {
-	border: 1px solid #9e2c3a;
+	border: 1px solid #a10237;
 	background: url(images/search.png) no-repeat 5px 5px;
-	background-color: #db3d50;
+	background-color: #c9213f;
 	color: #fff;
 	cursor: pointer;
 	font-size: 11px;
@@ -918,8 +901,8 @@ blockquote cite {
 	width: 24px;
 }
 #searchsubmit:hover {
-	border: 1px solid #7c202b;
-	background-color: #bc303f;
+	border: 1px solid #a10237;
+	background-color: #b31d38;
 }
 #sidebar #searchform div {
 	margin: 0 10px 10px 15px;
@@ -937,16 +920,12 @@ blockquote cite {
 	float: left;
 	font-size: 12px;
 	font-weight: bold;
-	margin-top: 5px;
 	padding-top: 5px;
 	width: 100%;
 }
-.pnavigation {
-	border-top: 1px solid #2d3b4a;
-}
 .cnavigation a,
 .pnavigation a {
-	color: #e94459;
+	color: #d21941;
 }
 .nprev {
 	float: left;

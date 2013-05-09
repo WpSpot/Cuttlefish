@@ -12,16 +12,16 @@ html .mceContentBody {
 	max-width: 518px;
 }
 body {
-	color: #112032;
+	color: #3c3952;
 	font: 12px/18px Tahoma, Verdana, sans-serif;
 }
 a {
-	color: #e94459;
+	color: #d21941;
 	outline: none;
 	text-decoration: underline;
 }
 a:hover {
-	color: #d91616;
+	color: #bf0d29;
 	text-decoration: none;
 }
 a:visited {
@@ -66,8 +66,8 @@ acronym {
 	border-bottom: 1px dotted #112032;
 }
 address {
-	border: 1px dotted #36475d;
-	border-left: 2px solid #36475d;
+	border: 1px dotted #3c3952;
+	border-left: 2px solid #a10237;
 	font-family: georgia;
 	font-size: 12px;
 	font-weight: bold;
@@ -76,7 +76,7 @@ address {
 }
 pre {
 	background-color: #f9f9f9;
-	color: #7e2633;
+	color: #c9213f;
 	font-family: "Courier New";
 	font-size: 11px;
 	padding: 0 10px;
@@ -90,7 +90,6 @@ dl {
 dt {
 	background-color: #f3f1f1;
 	border-left: 1px #d1cece solid;
-	color: #112032;
 	font-family: Georgia;
 	font-style: italic;
 	font-weight: bold;
@@ -178,7 +177,7 @@ table {
 	margin: 10px 0;
 }
 table th {
-	background: #36475d;
+	background: #c9213f;
 	color: #fff;
 	padding: 5px 10px;
 	text-align: left;
@@ -212,8 +211,8 @@ input[type="file"] {
 	height: 24px;
 }
 input[type="reset"], input[type="submit"] {
-	background-color: #db3d50;
-	border: 1px solid #9e2c3a;
+	background-color: #c9213f;
+	border: 1px solid #a10237;
 	color: #fff;
 	cursor: pointer;
 	font-size: 11px;
@@ -222,6 +221,6 @@ input[type="reset"], input[type="submit"] {
 	padding: 0 10px;
 }
 input[type="reset"]:hover, input[type="submit"]:hover {
-	background-color: #bc303f;
-	border: 1px solid #7c202b;
+	background-color: #b31d38;
+	border: 1px solid #a10237;
 }

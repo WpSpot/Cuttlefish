@@ -17,7 +17,7 @@ function cuttlefish_setup() {
 	if ( is_readable( $locale_file ) ) {
 		require_once( $locale_file );
 	}
-	
+
 	// Load up Cuttlefish options page and related code.
 	require( get_template_directory() . '/options/theme-options.php' );
 
@@ -57,11 +57,11 @@ if ( ! function_exists( 'cuttlefish_color_scheme_image_dir_uri' ) ) :
 function cuttlefish_color_scheme_image_dir_uri() {
 	$options = cuttlefish_get_theme_options();
 	$color_scheme = $options['option_color_scheme'];
-	
+
 	if ( $color_scheme != 'default' ) {
 		return get_template_directory_uri() . "/options/schemes/$color_scheme/images";
 	}
-	
+
 	return cuttlefish_image_dir_uri();
 }
 endif;
@@ -145,7 +145,7 @@ function cuttlefish_postmetatop( $page = false ) { ?>
 	<div class="postmeta-top">
 		<?php if ( ! $page && 'post' == get_post_type() ) : ?>
 			<?php printf( __( 'Posted by %s on', 'cuttlefish' ), '<a href="' . get_author_posts_url(get_the_author_meta( 'ID' )) . '">' . get_the_author() . '</a>'); ?>
-			<img src="<?php echo cuttlefish_color_scheme_image_dir_uri(); ?>/calendar.png" alt=""/><a href="<?php echo get_permalink(); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a>
+			<a href="<?php echo get_permalink(); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a>
 		<?php endif; ?>
 		<?php edit_post_link( __( '(Edit Page)', 'cuttlefish' ), ' '); ?>
 		<?php if ( comments_open() ) : ?>
@@ -161,10 +161,10 @@ endif;
 if ( ! function_exists( 'cuttlefish_postmetabtm' ) ) :
 function cuttlefish_postmetabtm() { ?>
 	<div class="postmeta-btm">
-		<div class="post-meta-item"><img src="<?php echo cuttlefish_image_dir_uri(); ?>/category.png" alt="" /><?php _e( 'Categories', 'cuttlefish' ); ?>: <?php the_category( ', ' ); ?>.</div>
-		<?php if ( get_the_tags() ) : ?>
-			<div class="post-meta-item"><img src="<?php echo cuttlefish_image_dir_uri(); ?>/tag.png" alt="" /><?php the_tags(); ?>.</div>
-		<?php endif; ?>
+		<div class="post-meta-item"><?php
+			$tags = ( get_the_tags() ) ? sprintf( __( ' Tags: %s.', 'cuttlefish' ), get_the_tag_list( '', ', ' ) ) : '';
+			printf( __( 'Categories: %s.%s', 'cuttlefish' ), get_the_category_list( ', ' ), $tags ); ?>
+		</div>
 	</div><?php
 }
 endif;
@@ -215,7 +215,7 @@ endif;
 
 if ( ! function_exists( 'cuttlefish_more_link_text' ) ) :
 function cuttlefish_more_link_text() {
-	return '<span class="read-more">' . __( 'Read the rest of this entry', 'cuttlefish' ) . '</span>';
+	return __( 'Read the rest of this entry', 'cuttlefish' );
 }
 endif;
 

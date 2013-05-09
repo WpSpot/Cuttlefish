@@ -3,9 +3,12 @@ WpSpot.com Team http://twitter.com/wpspotdotcom
 
 CHANGELOG
 
+=== 2.1.0 ===
+Fix: Theme styling.
+
 === 2.0.0 ===
 New: 11 color schemes.
-Fix: Styling of comment form, sidebar and menu. 
+Fix: Styling of comment form, sidebar and menu.
 
 === 1.1.5 ===
 Fix: Removed duplicated code.
@@ -40,7 +43,7 @@ Fix: Menu is displayed incorrectly when there are no menu items added.
 Fix: Menu is displayed incorrectly in IE9.
 Fix: comment-reply script moved to wp_enqueue_script.
 Fix: TEMPLATEPATH changed to get_template_directory().
-Fix: register_sidebar() hooked into widgets_init. 
+Fix: register_sidebar() hooked into widgets_init.
 
 === 1.0 ===
 Cuttlefish released.
