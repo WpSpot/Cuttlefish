@@ -3,6 +3,9 @@ WpSpot.com Team http://twitter.com/wpspotdotcom
 
 CHANGELOG
 
+=== 1.0.3 ===
+Fix: Sidebar id is not defined in sidebar.php.
+
 === 1.0.2 ===
 Fix: The credit text is missing translation function.
 Fix: register_sidebar() is missing the 'name', 'id', 'description' arguments.

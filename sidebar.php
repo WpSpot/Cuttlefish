@@ -1,6 +1,6 @@
 <div id="sidebar">
 	<ul>
-		<?php if ( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar() ) : ?>
+		<?php if ( !dynamic_sidebar( 'right-sidebar' ) ) : ?>
 		<li class="widget widget_search">
 			<h2><span><?php _e( 'Search', 'cuttlefish' ); ?></span></h2>
 			<?php get_search_form(); ?>
