@@ -4,7 +4,7 @@ Theme URI: http://wpspot.com/themes/cuttlefish/
 Description: Simple and stylish widget ready theme with two columns, fixed width, editor style, custom menu and threaded-comments.
 Author: WpSpot.com
 Author URI: http://wpspot.com/
-Version: 1.1.1
+Version: 1.1.2
 Tags: blue, white, dark, two-columns, right-sidebar, fixed-width, editor-style, custom-menu, sticky-post, threaded-comments, translation-ready
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -15,11 +15,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	padding: 0;
 }
 body {
-	width: 100%;
-	height: 100%;
 	background: #1a1a1a url(images/background.gif);
 	color: #112032;
 	font: 12px/18px Tahoma, Verdana, sans-serif;
+	width: 100%;
+	height: 100%;
 }
 a {
 	color: #e94459;
@@ -48,7 +48,7 @@ br {
 	clear: both;
 }
 label {
-	color: #999;
+	color: #112032;
 }
 h1 {
 	font-size: 24px;
@@ -159,19 +159,18 @@ sub, sup {
 
 /* DL DT DD ----------------------------------------------------------------- */
 
-.content > dl {
+dl {
 	padding: 10px 0;
 }
-.content > dl dt {
+dt {
 	background-color: #f3f1f1;
 	border-left: 1px #d1cece solid;
-	color: #112032;
 	font-family: Georgia;
 	font-style: italic;
 	font-weight: bold;
 	padding: 3px 0 3px 10px;
 }
-.content > dl dd {
+dd {
 	font-size: 11px;
 	padding: 7px 0 15px 25px;
 }
@@ -436,7 +435,6 @@ body .page,
 	float: left;
 	margin: 5px 0 10px 0;
 	padding-bottom: 10px;
-	color: #112032;
 	overflow: inherit;
 }
 .attachment > h2,
@@ -474,10 +472,7 @@ body .page,
 .sticky div.entry {
 	padding: 0 10px;
 }
-.sticky .content {
-	border-top: 1px solid #d1cece;
-	color: #112032;
-}
+.sticky .content,
 .sticky .postmeta-btm {
 	border-top: 1px solid #d1cece;
 }
@@ -622,7 +617,6 @@ img.alignright {
 .comments {
 	background: inherit;
 	clear: both;
-	color: #36475d;
 }
 .commentlist {
 	clear: both;
@@ -708,7 +702,6 @@ img.alignright {
 	font-weight: normal;
 }
 #comments-header {
-	color: #313f52;
 	font-size: 12px;
 	font-weight: bold;
 	left: -5px;
@@ -752,28 +745,24 @@ img.alignright {
 	position: static;
 }
 #respond .comment-form-comment label {
-	color: #112032;
 	padding: 0 13px 0 0;
 	font-weight: bold;
 }
 #respond .comment-form-author label {
-	color: #112032;
 	font-weight: bold;
 }
 #respond .comment-form-author span {
 	padding: 0px 29px 0px 0px;
 }
 #respond .comment-form-email label {
-	color: #112032;
 	font-weight: bold;
 }
 #respond .comment-form-email span {
 	padding: 0 31px 0 0;
 }
 #respond .comment-form-url label {
-	padding: 0 23px 0 0;
-	color: #112032;
 	font-weight: bold;
+	padding: 0 23px 0 0;
 }
 #respond .form-allowed-tags {
 	border-top: 1px dotted #828891;
@@ -1003,7 +992,6 @@ blockquote cite {
 }
 #sidebar li > h2 {
 	background: url(images/sidebar-heading-top.gif) no-repeat left top;
-	color: #112032;
 	float: left;
 	font-size: 11px;
 	font-weight: bold;
@@ -1054,12 +1042,8 @@ blockquote cite {
 	margin: 0;
 }
 #sidebar .tagcloud {
-	color: #112032;
 	display: block;
 	padding: 5px 5px 5px 15px;
-}
-#sidebar .tagcloud a {
-	color: #112032;
 }
 
 

@@ -7,6 +7,9 @@ http://wpspot.com/themes/cuttlefish-skin-pack/
 
 CHANGELOG
 
+=== 1.1.2 ===
+Fix: Styling of several selectors.
+
 === 1.1.1 ===
 Fix: Theme's description and tags.
 

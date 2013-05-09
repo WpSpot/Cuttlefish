@@ -39,7 +39,7 @@ br {
 	clear: both;
 }
 label {
-	color: #999;
+	color: #112032;
 }
 h1 {
 	font-size: 24px;
@@ -87,7 +87,7 @@ sub, sup {
 dl {
 	padding: 10px 0;
 }
-dl dt {
+dt {
 	background-color: #f3f1f1;
 	border-left: 1px #d1cece solid;
 	color: #112032;
@@ -96,7 +96,7 @@ dl dt {
 	font-weight: bold;
 	padding: 3px 0 3px 10px;
 }
-dl dd {
+dd {
 	font-size: 11px;
 	padding: 7px 0 15px 25px;
 }
