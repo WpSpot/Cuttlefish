@@ -3,6 +3,9 @@ WpSpot.com Team http://twitter.com/wpspotdotcom
 
 CHANGELOG
 
+=== 1.0.4 ===
+Fix: Styling of tables, forms and menus.
+
 === 1.0.3 ===
 Fix: Sidebar id is not defined in sidebar.php.
 
