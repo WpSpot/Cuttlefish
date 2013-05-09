@@ -4,7 +4,7 @@ Theme URI: http://wpspot.com/themes/cuttlefish/
 Description: Simple and stylish widget ready theme with two columns, fixed width, custom menu and threaded-comments.
 Author: WpSpot.com
 Author URI: http://wpspot.com/
-Version: 1.0.4
+Version: 1.1.0
 Tags: blue, white, dark, two-columns, right-sidebar, fixed-width, custom-menu, sticky-post, threaded-comments, translation-ready
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -50,9 +50,6 @@ br {
 label {
 	color: #999;
 }
-label.chosen {
-	color: #ff7f00;
-}
 h1 {
 	font-size: 24px;
 }
@@ -77,6 +74,15 @@ select {
 input,
 textarea {
 	border: 1px solid #828891;
+}
+abbr, acronym {
+	cursor: help;
+}
+abbr {
+	border-bottom: 1px dashed #112032;
+}
+acronym {
+	border-bottom: 1px dotted #112032;
 }
 address {
 	border: 1px dotted #36475d;
@@ -151,8 +157,7 @@ sub, sup {
 }
 
 
-/* =DL DT DD
--------------------------------------------------------------- */
+/* DL DT DD ----------------------------------------------------------------- */
 
 .content > dl {
 	padding: 10px 0;
@@ -172,8 +177,7 @@ sub, sup {
 }
 
 
-/* =Forms
--------------------------------------------------------------- */
+/* Forms -------------------------------------------------------------------- */
 
 .content label {
 	font-size: 11px;
@@ -219,8 +223,7 @@ sub, sup {
 }
 
 
-/* =Table
--------------------------------------------------------------- */
+/* Table -------------------------------------------------------------------- */
 
 #posts table {
 	border-spacing: 0px;
@@ -242,8 +245,7 @@ sub, sup {
 }
 
 
-/* =Menu
--------------------------------------------------------------- */
+/* Menu --------------------------------------------------------------------- */
 
 #menu-decor {
 	background: url(images/menu-decor.png) no-repeat left top;
@@ -563,8 +565,7 @@ body .page,
 }
 
 
-/* =Images
--------------------------------------------------------------- */
+/* Images ------------------------------------------------------------------- */
 
 .entry img {
 	height: auto;
@@ -616,8 +617,7 @@ img.alignright {
 }
 
 
-/* =Comments
--------------------------------------------------------------- */
+/* Comments ----------------------------------------------------------------- */
 
 .comments {
 	background: inherit;
@@ -726,8 +726,7 @@ img.alignright {
 }
 
 
-/* =Comment Form
--------------------------------------------------------------- */
+/* Comment Form ------------------------------------------------------------- */
 
 #respond {
 	background-color: #f3f1f1;
@@ -793,8 +792,7 @@ img.alignright {
 }
 
 
-/* =Read More Link
--------------------------------------------------------------- */
+/* Read More Link ----------------------------------------------------------- */
 
 .read-more {
 	background: url(images/read.png) no-repeat left top;
@@ -808,8 +806,7 @@ img.alignright {
 }
 
 
-/* =Archive Labels
--------------------------------------------------------------- */
+/* Archive Labels ----------------------------------------------------------- */
 
 .archive-label {
 	background: url(images/archive-label.gif) no-repeat left top;
@@ -829,8 +826,7 @@ img.alignright {
 }
 
 
-/* =Quotes
--------------------------------------------------------------- */
+/* Quotes ------------------------------------------------------------------- */
 
 blockquote {
 	border-left: 2px solid #cccccc;
@@ -849,8 +845,7 @@ blockquote cite {
 }
 
 
-/* =Page Links
--------------------------------------------------------------- */
+/* Page Links --------------------------------------------------------------- */
 
 .page-link {
 	clear: both;
@@ -878,8 +873,7 @@ blockquote cite {
 }
 
 
-/* =Calendar Widget
--------------------------------------------------------------- */
+/* Calendar Widget ---------------------------------------------------------- */
 
 #wp-calendar {
 	color: #555555;
@@ -915,8 +909,7 @@ blockquote cite {
 }
 
 
-/* =Search form
--------------------------------------------------------------- */
+/* Search form -------------------------------------------------------------- */
 
 #s {
 	height: 22px;
@@ -947,8 +940,7 @@ blockquote cite {
 }
 
 
-/* =Posts & Comments Navigation
--------------------------------------------------------------- */
+/* Posts & Comments Navigation ---------------------------------------------- */
 
 .cnavigation,
 .pnavigation {
@@ -974,8 +966,7 @@ blockquote cite {
 }
 
 
-/* =Sidebar
--------------------------------------------------------------- */
+/* Sidebar ------------------------------------------------------------------ */
 
 #sidebar {
 	background: url(images/sidebar-top.gif) no-repeat left top #f3f1f1;
@@ -1072,8 +1063,7 @@ blockquote cite {
 }
 
 
-/* =Footer
--------------------------------------------------------------- */
+/* Footer ------------------------------------------------------------------- */
 
 #footer {
 	background: url(images/footer.png) repeat-x left top;

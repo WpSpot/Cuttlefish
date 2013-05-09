@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cuttlefish\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-12 10:01+0200\n"
-"PO-Revision-Date: 2012-03-12 10:02+0200\n"
+"POT-Creation-Date: 2012-04-19 13:18+0200\n"
+"PO-Revision-Date: 2012-04-19 13:18+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -72,88 +72,88 @@ msgstr ""
 msgid "Top"
 msgstr ""
 
-#: cuttlefish/functions.php:21
+#: cuttlefish/functions.php:23
 msgid "Primary Menu"
 msgstr ""
 
-#: cuttlefish/functions.php:28
+#: cuttlefish/functions.php:30
 msgid "Right Sidebar"
 msgstr ""
 
-#: cuttlefish/functions.php:29
+#: cuttlefish/functions.php:31
 msgid "right-sidebar"
 msgstr ""
 
-#: cuttlefish/functions.php:30
+#: cuttlefish/functions.php:32
 msgid "Widgets in this area will be shown on the right-hand side."
 msgstr ""
 
-#: cuttlefish/functions.php:71
-#: cuttlefish/functions.php:86
+#: cuttlefish/functions.php:73
+#: cuttlefish/functions.php:88
 msgid "(Edit)"
 msgstr ""
 
-#: cuttlefish/functions.php:85
+#: cuttlefish/functions.php:87
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: cuttlefish/functions.php:91
+#: cuttlefish/functions.php:93
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: cuttlefish/functions.php:114
+#: cuttlefish/functions.php:116
 msgid "Posted by %s on"
 msgstr ""
 
-#: cuttlefish/functions.php:117
+#: cuttlefish/functions.php:119
 msgid "(Edit Page)"
 msgstr ""
 
-#: cuttlefish/functions.php:121
+#: cuttlefish/functions.php:123
 msgid "No comments"
 msgstr ""
 
-#: cuttlefish/functions.php:121
+#: cuttlefish/functions.php:123
 msgid "One comment"
 msgstr ""
 
-#: cuttlefish/functions.php:121
+#: cuttlefish/functions.php:123
 msgid "% comments"
 msgstr ""
 
-#: cuttlefish/functions.php:131
+#: cuttlefish/functions.php:133
 msgid "Categories"
 msgstr ""
 
-#: cuttlefish/functions.php:143
+#: cuttlefish/functions.php:145
 msgid "&nbsp;&laquo; Previous Posts"
 msgstr ""
 
-#: cuttlefish/functions.php:144
+#: cuttlefish/functions.php:146
 msgid "Next Posts &raquo;&nbsp;"
 msgstr ""
 
-#: cuttlefish/functions.php:153
+#: cuttlefish/functions.php:155
 msgid "&nbsp;&laquo; Previous Post"
 msgstr ""
 
-#: cuttlefish/functions.php:154
+#: cuttlefish/functions.php:156
 msgid "Next Post &raquo;&nbsp;"
 msgstr ""
 
-#: cuttlefish/functions.php:162
+#: cuttlefish/functions.php:164
 msgid "&nbsp;&laquo; Previous Image"
 msgstr ""
 
-#: cuttlefish/functions.php:163
+#: cuttlefish/functions.php:165
 msgid "Next Image &raquo;&nbsp;"
 msgstr ""
 
-#: cuttlefish/functions.php:171
+#: cuttlefish/functions.php:173
 msgid "&nbsp;&laquo; Previous Comments"
 msgstr ""
 
-#: cuttlefish/functions.php:172
+#: cuttlefish/functions.php:174
 msgid "Next Comments &raquo;&nbsp;"
 msgstr ""
 

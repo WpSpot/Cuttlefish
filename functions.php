@@ -18,6 +18,8 @@ function cuttlefish_setup() {
 		require_once( $locale_file );
 	}
 
+	add_editor_style();
+
 	register_nav_menu( 'primary', __( 'Primary Menu', 'cuttlefish' ) );
 }
 endif;

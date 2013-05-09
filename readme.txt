@@ -1,10 +1,18 @@
 Thank you for downloading Cuttlefish!
 WpSpot.com Team http://twitter.com/wpspotdotcom
 
+Do you like Cuttlefish but want different color schemes?
+Download 'Cuttlefish Skin Pack' - FREE bundle of 10 child themes
+http://wpspot.com/themes/cuttlefish-skin-pack/
+
 CHANGELOG
 
+=== 1.1.0 ===
+New: Styling of TinyMCE editor.
+New: Styling of 'abbr' and 'acronym' tags.
+
 === 1.0.4 ===
-Fix: Styling of tables, forms and menus.
+Fix: Styling of tables and forms.
 
 === 1.0.3 ===
 Fix: Sidebar id is not defined in sidebar.php.
