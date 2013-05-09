@@ -10,31 +10,40 @@ function cuttlefish_setup() {
 
 	add_theme_support( 'automatic-feed-links' );
 
-	load_theme_textdomain( 'cuttlefish', TEMPLATEPATH . '/languages' );
+	load_theme_textdomain( 'cuttlefish', get_template_directory() . '/languages' );
 
 	$locale = get_locale();
-	$locale_file = TEMPLATEPATH . "/languages/$locale.php";
+	$locale_file = get_template_directory() . "/languages/$locale.php";
 	if ( is_readable( $locale_file ) ) {
 		require_once( $locale_file );
 	}
 
-	register_nav_menu( 'primary', __( 'Primary', 'cuttlefish' ) );
-
-	if ( function_exists( 'register_sidebar' ) ) {
-		register_sidebar(
-			array(
-				'before_title' => '<h2><span>',
-				'after_title'  => '</span></h2>'
-			)
-		);
-	}
+	register_nav_menu( 'primary', __( 'Primary Menu', 'cuttlefish' ) );
 }
 endif;
+
+function cuttlefish_widgets_init() {
+	register_sidebar(
+		array(
+			'before_title' => '<h2><span>',
+			'after_title'  => '</span></h2>'
+		)
+	);
+}
+add_action( 'widgets_init', 'cuttlefish_widgets_init' );
+
+function cuttlefish_scripts() {
+	if ( is_singular() && get_option( 'thread_comments' ) && comments_open() ) {
+		wp_enqueue_script( 'comment-reply' );
+	}
+}
+add_action( 'wp_enqueue_scripts', 'cuttlefish_scripts');
 
 if ( ! function_exists( 'cuttlefish_wp_nav_menu' ) ) :
 function cuttlefish_wp_nav_menu() {
 	return wp_nav_menu(
 		array(
+			'theme_location' => 'primary',
 			'container_class' => 'menu',
 			'items_wrap' => '<ul id="%1$s">%3$s</ul>',
 			'echo' => 0,

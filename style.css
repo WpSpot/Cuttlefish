@@ -4,7 +4,7 @@ Theme URI: http://wpspot.com/themes/cuttlefish/
 Description: Simple and stylish widget ready theme with two columns, fixed width, custom menu and threaded-comments.
 Author: WpSpot.com
 Author URI: http://wpspot.com/
-Version: 1.0
+Version: 1.0.1
 Tags: blue, white, dark, two-columns, right-sidebar, fixed-width, custom-menu, sticky-post, threaded-comments, translation-ready
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -240,15 +240,24 @@ sub, sup {
 /* =Menu
 -------------------------------------------------------------- */
 
+#menu-decor {
+	background: url(images/menu-decor.png) no-repeat left top;
+	height: 45px;
+	margin: 0 -208px;
+	width: 1220px;
+	z-index: -1;
+}
 #menu-box {
 	margin-top: -120px;
 	width: 100%;
 }
 #menu-box .menu {
 	background: url(images/menu-middle.png) repeat-y left top;
+	display: block;
+	font-size: 11px;
+	margin: 0;
 	padding: 0;
 	width: 100%;
-	margin: 0;
 }
 #menu-header {
 	background: url(images/menu-header.png) no-repeat left top;
@@ -257,23 +266,8 @@ sub, sup {
 }
 #menu-footer {
 	background: url(images/menu-footer.png) no-repeat left bottom;
+	width: 100%;
 	height: 9px;
-	width: 100%;
-	margin: 0;
-}
-#menu-decor {
-	background: url(images/menu-decor.png) no-repeat left top;
-	height: 45px;
-	margin: 0 -208px;
-	width: 1220px;
-	z-index: -1;
-}
-#menu-box .menu {
-	display: block;
-	font-size: 11px;
-	margin: 0 auto;
-	padding: 0;
-	width: 100%;
 }
 #menu-box .menu:before,
 #menu-box .menu:after {
@@ -284,8 +278,11 @@ sub, sup {
 	clear: both;
 }
 #menu-box .menu ul {
+	float: left;
 	list-style: none;
 	margin: 0 15px;
+	min-height: 38px;
+	width: 100%;
 }
 #menu-box .menu li {
 	float: left;
@@ -902,10 +899,10 @@ blockquote cite {
 	background: #fff;
 }
 #wp-calendar td a {
-	background: #021123;
-	color: #fff !important;
+	color: #021123;
+	font-weight: bold;
 	display: block;
-	text-decoration: none;
+	text-decoration: underline;
 }
 #wp-calendar tfoot td {
 	background: none;
