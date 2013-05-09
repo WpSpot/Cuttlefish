@@ -7,6 +7,10 @@ http://wpspot.com/themes/cuttlefish-skin-pack/
 
 CHANGELOG
 
+=== 1.1.3 ===
+Fix: Styling of dt inside gallery.
+Fix: Removed unnecessary parameter from the_content().
+
 === 1.1.2 ===
 Fix: Styling of several selectors.
 
