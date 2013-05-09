@@ -7,6 +7,9 @@ http://wpspot.com/themes/cuttlefish-skin-pack/
 
 CHANGELOG
 
+=== 1.1.1 ===
+Fix: Theme's description and tags.
+
 === 1.1.0 ===
 New: Styling of TinyMCE editor.
 New: Styling of 'abbr' and 'acronym' tags.
