@@ -5,7 +5,7 @@
 	<div class="entry">
 		<?php cuttlefish_postmetatop( true ); ?>
 		<div class="content"><?php the_content( '', false ); ?></div>
-		<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'cuttlefish' ), 'after' => '</div>' ) ); ?>
+		<?php cuttlefish_wp_link_pages(); ?>
 		<div class="postmeta-btm"></div>
 	</div>
 </div>

@@ -17,7 +17,7 @@
 					$total_images ); ?></em></p>
 			<?php endif; ?>
 			<?php the_excerpt(); ?>
-			<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'cuttlefish' ), 'after' => '</div>' ) ); ?>
+			<?php cuttlefish_wp_link_pages(); ?>
 		</div>
 		<?php cuttlefish_postmetabtm(); ?>
 	</div>

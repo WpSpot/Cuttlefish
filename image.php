@@ -35,7 +35,7 @@
 					<?php endif; ?>
 
 					</div>
-					<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'cuttlefish' ), 'after' => '</div>' ) ); ?>
+					<?php cuttlefish_wp_link_pages(); ?>
 					<div class="postmeta-btm"></div>
 				</div>
 			</div>

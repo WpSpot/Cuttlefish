@@ -7,7 +7,10 @@ http://wpspot.com/themes/cuttlefish-skin-pack/
 
 CHANGELOG
 
-=== 1.1.3 ===
+=== 1.1.5 ===
+Fix: Removed duplicated code.
+
+=== 1.1.4 ===
 Fix: Styling of dt inside gallery.
 Fix: Removed unnecessary parameter from the_content().
 

@@ -44,6 +44,12 @@ function cuttlefish_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'cuttlefish_scripts');
 
+if ( ! function_exists( 'cuttlefish_image_dir_uri' ) ) :
+function cuttlefish_image_dir_uri() {
+	return get_stylesheet_directory_uri() . '/images';
+}
+endif;
+
 if ( ! function_exists( 'cuttlefish_wp_nav_menu' ) ) :
 function cuttlefish_wp_nav_menu() {
 	return wp_nav_menu(
@@ -98,7 +104,7 @@ function cuttlefish_comment( $comment, $args, $depth ) {
 			<div class="reply"><?php
 				$reply_link = get_comment_reply_link( array_merge( $args, array( 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) );
 				if ( $reply_link ) : ?>
-					<span><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/comments.png" alt="" /></span>
+					<span><img src="<?php echo cuttlefish_image_dir_uri(); ?>/comments.png" alt="" /></span>
 					<?php echo $reply_link; ?>
 				<?php endif; ?>
 			</div>
@@ -114,12 +120,12 @@ function cuttlefish_postmetatop( $page = false ) { ?>
 	<div class="postmeta-top">
 		<?php if ( ! $page && 'post' == get_post_type() ) : ?>
 			<?php printf( __( 'Posted by %s on', 'cuttlefish' ), '<a href="' . get_author_posts_url(get_the_author_meta( 'ID' )) . '">' . get_the_author() . '</a>'); ?>
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/calendar.png" alt=""/><a href="<?php echo get_permalink(); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a>
+			<img src="<?php echo cuttlefish_image_dir_uri(); ?>/calendar.png" alt=""/><a href="<?php echo get_permalink(); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a>
 		<?php endif; ?>
 		<?php edit_post_link( __( '(Edit Page)', 'cuttlefish' ), ' '); ?>
 		<?php if ( comments_open() ) : ?>
 			<span>
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/comments.png" alt="" />
+				<img src="<?php echo cuttlefish_image_dir_uri(); ?>/comments.png" alt="" />
 				<a href="<?php comments_link(); ?>"><?php comments_number( __( 'No comments', 'cuttlefish' ), __( 'One comment', 'cuttlefish' ), __( '% comments', 'cuttlefish' ) ); ?></a>
 			</span>
 		<?php endif; ?>
@@ -130,9 +136,9 @@ endif;
 if ( ! function_exists( 'cuttlefish_postmetabtm' ) ) :
 function cuttlefish_postmetabtm() { ?>
 	<div class="postmeta-btm">
-		<div class="post-meta-item"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/category.png" alt="" /><?php _e( 'Categories', 'cuttlefish' ); ?>: <?php the_category( ', ' ); ?>.</div>
+		<div class="post-meta-item"><img src="<?php echo cuttlefish_image_dir_uri(); ?>/category.png" alt="" /><?php _e( 'Categories', 'cuttlefish' ); ?>: <?php the_category( ', ' ); ?>.</div>
 		<?php if ( get_the_tags() ) : ?>
-			<div class="post-meta-item"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/tag.png" alt="" /><?php the_tags(); ?>.</div>
+			<div class="post-meta-item"><img src="<?php echo cuttlefish_image_dir_uri(); ?>/tag.png" alt="" /><?php the_tags(); ?>.</div>
 		<?php endif; ?>
 	</div><?php
 }
@@ -152,8 +158,8 @@ endif;
 if ( ! function_exists( 'cuttlefish_single_navigation' ) ) :
 function cuttlefish_single_navigation() { ?>
 	<div class="pnavigation">
-		<div class="nprev"><?php previous_post_link( '%link', __('&nbsp;&laquo; Previous Post', 'cuttlefish' )); ?></div>
-		<div class="nnext"><?php next_post_link( '%link', __('Next Post &raquo;&nbsp;', 'cuttlefish' )); ?></div>
+		<div class="nprev"><?php previous_post_link( '%link', __( '&nbsp;&laquo; Previous Post', 'cuttlefish' )); ?></div>
+		<div class="nnext"><?php next_post_link( '%link', __( 'Next Post &raquo;&nbsp;', 'cuttlefish' )); ?></div>
 	</div><?php
 }
 endif;
@@ -178,7 +184,19 @@ endif;
 
 if ( ! function_exists( 'cuttlefish_arrow' ) ) :
 function cuttlefish_arrow() { ?>
-	<span class="arrow"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/arrow.gif" alt="" title="" /></span><?php
+	<span class="arrow"><img src="<?php echo cuttlefish_image_dir_uri(); ?>/arrow.gif" alt="" title="" /></span><?php
+}
+endif;
+
+if ( ! function_exists( 'cuttlefish_more_link_text' ) ) :
+function cuttlefish_more_link_text() {
+	return '<span class="read-more">' . __( 'Read the rest of this entry', 'cuttlefish' ) . '</span>';
+}
+endif;
+
+if ( ! function_exists( 'cuttlefish_wp_link_pages' ) ) :
+function cuttlefish_wp_link_pages() {
+	wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'cuttlefish' ), 'after' => '</div>' ) );
 }
 endif;
 ?>

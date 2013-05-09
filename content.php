@@ -4,8 +4,8 @@
 	<div class="entry">
 		<?php cuttlefish_postmetatop(); ?>
 		<div class="content">
-			<?php the_content( '<span class="read-more">' . __( 'Read the rest of this entry', 'cuttlefish' ) . '</span>', false ); ?>
-			<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'cuttlefish' ), 'after' => '</div>' ) ); ?>
+			<?php the_content( cuttlefish_more_link_text(), false ); ?>
+			<?php cuttlefish_wp_link_pages(); ?>
 		</div>
 		<?php cuttlefish_postmetabtm(); ?>
 	</div>
