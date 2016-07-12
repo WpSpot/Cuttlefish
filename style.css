@@ -100,6 +100,8 @@ pre {
 	font-family: "Courier New";
 	font-size: 11px;
 	padding: 0 10px;
+	white-space: pre-wrap;
+	word-wrap: break-word;
 }
 sub, sup {
 	font-weight: bold;
