@@ -233,12 +233,16 @@ dd {
 	margin: 10px 0;
 }
 #posts table th {
-	background: #3c3952;
-	color: #fff;
 	padding: 5px 10px;
 	text-align: left;
+	font-weight: bold;
 }
-#posts table td {
+#posts table thead th {
+	background: #3c3952;
+	color: #fff;
+}
+#posts table tbody td,
+#posts table tbody th {
 	border-bottom: 1px dotted #36475d;
 	padding: 5px 10px;
 }

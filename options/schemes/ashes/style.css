@@ -45,7 +45,7 @@ pre {
 	background-color: #541512;
 	border: 1px solid #380e0c;
 }
-#posts table th {
+#posts table thead th {
 	background-color: #aa1111;
 }
 #menu-box .menu {
