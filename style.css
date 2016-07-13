@@ -607,7 +607,7 @@ img.alignright {
 .gallery dt {
 	background-color: transparent;
 	border-left: 0;
-	padding: 0;
+	padding: 0 3px;
 }
 .gallery-thumb img {
 	border: 2px solid #cfcfcf;
@@ -619,7 +619,15 @@ img.alignright {
 	margin-top: 5px;
 	padding: 0 8px;
 }
-
+.gallery-columns-6 .gallery-caption,
+.gallery-columns-7 .gallery-caption,
+.gallery-columns-8 .gallery-caption,
+.gallery-columns-9 .gallery-caption {
+	display: none;
+}
+.gallery-item img {
+	max-width: 100%;
+}
 
 /* Comments ----------------------------------------------------------------- */
 
