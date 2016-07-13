@@ -3,6 +3,9 @@ WpSpot.com Team http://twitter.com/wpspotdotcom
 
 CHANGELOG
 
+=== 2.2.0 ===
+Fix: Styling of gallery, table and other minor issues.
+
 === 2.1.0 ===
 Fix: Theme styling.
 
