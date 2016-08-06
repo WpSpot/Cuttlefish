@@ -78,7 +78,7 @@ add_action( 'admin_menu', 'cuttlefish_theme_options_add_page' );
 
 
 /**
- * Help for the options page. 
+ * Help for the options page.
  *
  * @since Cuttlefish 2.0.0
  */
@@ -211,7 +211,6 @@ function cuttlefish_settings_field_color_scheme() {
  */
 function cuttlefish_render_theme_options_page() { ?>
 	<div class="wrap">
-		<?php screen_icon(); ?>
 		<h2><?php printf( __( '%s Theme Options', 'cuttlefish' ), wp_get_theme() ); ?></h2>
 		<?php settings_errors(); ?>
 
@@ -251,11 +250,11 @@ function cuttlefish_validate_theme_options( $input ) {
 function cuttlefish_enqueue_color_scheme() {
 	$options = cuttlefish_get_theme_options();
 	$color_scheme = $options['option_color_scheme'];
-	
+
 	if ( $color_scheme != 'default' ) {
 		wp_enqueue_style( $color_scheme, get_template_directory_uri() . "/options/schemes/$color_scheme/style.css", array(), null );
 		do_action( 'cuttlefish_enqueue_color_scheme', $color_scheme );
-	}	
+	}
 }
 add_action( 'wp_enqueue_scripts', 'cuttlefish_enqueue_color_scheme' );
 ?>
