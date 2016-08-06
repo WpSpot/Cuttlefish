@@ -18,6 +18,8 @@ function cuttlefish_setup() {
 		require_once( $locale_file );
 	}
 
+	add_theme_support( 'title-tag' );
+
 	// Load up Cuttlefish options page and related code.
 	require( get_template_directory() . '/options/theme-options.php' );
 
